@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.product-cart__price {
+    font-size: 16px;
+    padding-top: 28px;
+}
+
+.product-cart__title {
+    font-size: 14px;
+    min-height: 30px;
+    line-height: 1;
+}
