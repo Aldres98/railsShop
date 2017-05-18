@@ -1,10 +1,10 @@
 <% @products.each do |i|%>
 <div class="product-card col-xs-6 col-sm-6 col-md-4 col-lg-4">
     <div class="product-card__thumbnail thumbnail">
-        <a href="" title="<%= i.title%>
-            ">
-            <img class="product-card__image img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300×300&w=300&h=300" ></a>
-        <h3 class="product-card__title"><%=i.title%></h3>
+                    <%= link_to i do %>
+
+            <img class="product-card__image img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300×300&w=300&h=300" >        <h3 class="product-card__title"><%=i.title%></h3>
+            <%end%>
 
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
