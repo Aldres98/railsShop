@@ -3,7 +3,8 @@
     <div class="product-card__thumbnail thumbnail">
                     <%= link_to i do %>
 
-            <img class="product-card__image img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300×300&w=300&h=300" >        <h3 class="product-card__title"><%=i.title%></h3>
+                <%=image_tag(i.product_image.url(:thumb), class: 'media-object')%>
+        <h3 class="product-card__title"><%=i.title%></h3>
             <%end%>
 
         <div class="row">

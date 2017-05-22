@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0.1'
 gem 'hiredis', '~> 0.4.5'
 gem 'devise'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

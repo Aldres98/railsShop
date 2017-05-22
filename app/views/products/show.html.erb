@@ -1,5 +1,5 @@
 <div class="col-lg-3 col-xs-12">
- <img class="product-card__image img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=28&txt=300×300&w=300&h=300"/>
+                <%=image_tag(@product.product_image.url(:thumb), class: 'media-object')%>
 </div>
 
 <div class="col-lg-9 col-xs-12">
