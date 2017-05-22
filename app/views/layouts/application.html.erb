@@ -25,8 +25,13 @@
     <div class="collapse navbar-collapse" id="Navbar">
     <ul class="navbar-right">
   <%if signed_in?%>
-    <li><%=link_to current_user.email, edit_user_registration_path%></li>
-    <li><%=link_to "Logout", destroy_user_session_path, method: :delete%></li>
+    <%=link_to edit_user_registration_path do%>
+    <button type="button" class="btn btn-primary navbar-btn"> <span class="glyphicon glyphicon-user"></span> Profile</button>
+    <%end%>
+    <%=link_to destroy_user_session_path, method: :delete do%>
+        <button type="button" class="btn btn-danger navbar-btn"> <span class="glyphicon glyphicon-remove"></span> Log out</button>
+
+    <%end%>
   <%else%>
     <li><%=link_to "Register", new_user_registration_path%></li>
     <li><%=link_to "Login", new_user_session_path%></li>
