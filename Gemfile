@@ -32,6 +32,7 @@ gem 'redis', '~> 3.0.1'
 gem 'hiredis', '~> 0.4.5'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
+gem "mini_magick"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

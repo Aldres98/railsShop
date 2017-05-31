@@ -3,7 +3,7 @@
     <div class="product-card__thumbnail thumbnail">
                     <%= link_to i do %>
 
-                <%=image_tag(i.product_image.url(:thumb), class: 'media-object')%>
+                <%=image_tag(i.images.first.thumb, class: 'media-object')%>
         <h3 class="product-card__title"><%=i.title%></h3>
             <%end%>
 
