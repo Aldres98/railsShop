@@ -1,13 +1,14 @@
-<div class="col-lg-3 col-xs-12">
+<div class="col-lg-9 col-xs-12">
                 <%@product.images.each do |i|%>
 
-            <%=image_tag(i.url)%>
-
+        <div class="col-lg-3">
+            <%=image_tag(i.thumb)%>
+        </div>
 
                 <% end %>
 </div>
 
-<div class="col-lg-9 col-xs-12">
+<div class="col-lg-4 col-xs-12">
   <h3>
     <%= @product.title %>
   </h3>
