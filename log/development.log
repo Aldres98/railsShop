@@ -4947,3 +4947,168 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products/new" for ::1 at 2017-06-05 13:43:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 717ms (Views: 684.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for ::1 at 2017-06-05 13:43:27 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2017-06-05 13:43:37 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 135ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2017-06-05 13:46:30 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 82ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2017-06-05 13:46:53 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/Aldres/Desktop/railsShop/app/views/products/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+...ppend=  form_for (@new_product, class:'dropzone') do |f| @ou...
+...                               ^
+/Users/Aldres/Desktop/railsShop/app/views/products/new.html.erb:3: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...@new_product, class:'dropzone') do |f| @output_buffer.safe_a...
+...                               ^
+/Users/Aldres/Desktop/railsShop/app/views/products/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/products/new.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/products/new.html.erb:3: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/products/new.html.erb:26: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.2ms)
+Started GET "/products/new" for ::1 at 2017-06-05 13:48:23 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2017-06-05 13:48:32 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2017-06-05 13:49:27 +0300
+Processing by ProductsController#create as JSON
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5nukOIaxBhhgmfgRzqcyzJNbcd0i8HFsgesUTkqZ1iE3/o7zPfswX1q86JOFvCDitpwzaYvPq2l3EDvNG8I3cQ==", "product"=>{"title"=>"", "price"=>"", "description"=>"", "images"=>[""]}, "commit"=>"Upload", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fb7164e7c10 @tempfile=#<Tempfile:/var/folders/1p/5btxs93x09163yx3v14njhm00000gp/T/RackMultipart20170605-40685-vzeozi.jpg>, @original_filename="banana_hangover_2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"banana_hangover_2.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "products" ("title", "description", "created_at", "updated_at", "images") VALUES (?, ?, ?, ?, ?)[0m  [["title", ""], ["description", ""], ["created_at", 2017-06-05 10:49:27 UTC], ["updated_at", 2017-06-05 10:49:27 UTC], ["images", nil]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 200 OK in 41ms (ActiveRecord: 3.6ms)
+
+
+Started POST "/products" for ::1 at 2017-06-05 13:49:46 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5nukOIaxBhhgmfgRzqcyzJNbcd0i8HFsgesUTkqZ1iE3/o7zPfswX1q86JOFvCDitpwzaYvPq2l3EDvNG8I3cQ==", "product"=>{"title"=>"Banana", "price"=>"100", "description"=>"123"}, "commit"=>"Upload"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Banana"], ["price", 100], ["description", "123"], ["created_at", 2017-06-05 10:49:46 UTC], ["updated_at", 2017-06-05 10:49:46 UTC]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 51ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2017-06-05 13:49:46 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for nil:NilClass):
+    3:     <div class="product-card__thumbnail thumbnail">
+    4:                     <%= link_to i do %>
+    5: 
+    6:                 <%=image_tag(i.images.first.thumb, class: 'media-object')%>
+    7:         <h3 class="product-card__title"><%=i.title%></h3>
+    8:             <%end%>
+    9: 
+  
+app/views/products/index.html.erb:6:in `block (2 levels) in _app_views_products_index_html_erb___3323312270919232628_70212218248680'
+app/views/products/index.html.erb:4:in `block in _app_views_products_index_html_erb___3323312270919232628_70212218248680'
+app/views/products/index.html.erb:1:in `_app_views_products_index_html_erb___3323312270919232628_70212218248680'
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.0ms)
+Started GET "/products/new" for ::1 at 2017-06-05 13:50:02 +0300
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2017-06-05 13:50:09 +0300
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HdmNeuPuCQxLE9gyvh393g6P9Ff//C4abn13D7qbRh8RpFK6FVrINFVMH/hyUoAhwirvVbzIBDDDSkuTlexoOA==", "product"=>{"title"=>"123", "price"=>"123", "description"=>"123", "images"=>[#<ActionDispatch::Http::UploadedFile:0x007fb71bba9378 @tempfile=#<Tempfile:/var/folders/1p/5btxs93x09163yx3v14njhm00000gp/T/RackMultipart20170605-40685-16l50pa.jpg>, @original_filename="67d967142e.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[images][]\"; filename=\"67d967142e.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Upload"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "products" ("title", "price", "description", "created_at", "updated_at", "images") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "123"], ["price", 123], ["description", "123"], ["created_at", 2017-06-05 10:50:09 UTC], ["updated_at", 2017-06-05 10:50:09 UTC], ["images", "[\"67d967142e.jpg\"]"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 440ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2017-06-05 13:50:09 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `thumb' for nil:NilClass):
+    3:     <div class="product-card__thumbnail thumbnail">
+    4:                     <%= link_to i do %>
+    5: 
+    6:                 <%=image_tag(i.images.first.thumb, class: 'media-object')%>
+    7:         <h3 class="product-card__title"><%=i.title%></h3>
+    8:             <%end%>
+    9: 
+  
+app/views/products/index.html.erb:6:in `block (2 levels) in _app_views_products_index_html_erb___3323312270919232628_70212210577820'
+app/views/products/index.html.erb:4:in `block in _app_views_products_index_html_erb___3323312270919232628_70212210577820'
+app/views/products/index.html.erb:1:in `_app_views_products_index_html_erb___3323312270919232628_70212210577820'
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Aldres/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.6ms)
